@@ -14,6 +14,7 @@ Given that this is just a basic guide to designing, laying out, and maunfacturin
     <em>Buck Converter Based Power Regulator Circuit.</em>
 </p>
 
+For the specific buck converter that we are using, I'm using the TPS54300DDA chip. 
 
 ### STM32F030 MCU
 <p align="center">
