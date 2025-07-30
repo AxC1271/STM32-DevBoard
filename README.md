@@ -11,7 +11,7 @@ Given that this is just a basic guide to designing, laying out, and maunfacturin
   <img width="800px" src="./Images/PowerRegulatorSchematic.png" />
 </p>
 <p align="center">
-  <figcaption align="center"><em>Buck Converter Based Power Regulator Circuit.</em></figcaption>
+  <figcaption text-align="center"><em>Buck Converter Based Power Regulator Circuit.</em></figcaption>
 </p>
 
 ### STM32F030 MCU
