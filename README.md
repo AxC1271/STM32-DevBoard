@@ -11,7 +11,7 @@ Given that this is just a basic guide to designing, laying out, and maunfacturin
     <img width="800px" src="./Images/PowerRegulatorSchematic.png" />
 </p>
 <p align="center">
-    <figcaption><em>Buck Converter Based Power Regulator Circuit.</em></figcaption>
+    <em>Buck Converter Based Power Regulator Circuit.</em>
 </p>
 
 
