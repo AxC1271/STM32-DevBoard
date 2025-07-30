@@ -19,6 +19,9 @@ Given that this is just a basic guide to designing, laying out, and maunfacturin
 <p align="center">
   <img width="600px" src="./Images/STM32MCUSchematic.png" />
 </p>
+<p align="center">
+    <em>MCU Schematic with GPIO, UART, and I2C pins.</em>
+</p>
 
 ## Connectors
 
@@ -26,12 +29,17 @@ Given that this is just a basic guide to designing, laying out, and maunfacturin
 <p align="center">
   <img width="600px" src="./Images/LeftConnectorSchematic.png" />
 </p>
+<p align="center">
+    <em>External connector for I2C bus, NRST, and USART1 pins.</em>
+</p>
 
 ### Right Connector
 <p align="center">
   <img width="600px" src="./Images/RightConnectorSchematic.png" />
 </p>
-
+<p align="center">
+    <em>External connector for USART2 and GPIO pins.</em>
+</p>
 ## Assigning Footprints
 
 ## PCB Layout
