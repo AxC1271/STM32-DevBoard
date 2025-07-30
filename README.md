@@ -10,15 +10,15 @@ Given that this is just a basic guide to designing, laying out, and maunfacturin
 <img width="800px" src="./Images/PowerRegulatorSchematic.png" />
 
 ### STM32F030 MCU
-<img width="800px" src="./Images/STM32MCUSchematic.png" />
+<img width="600px" src="./Images/STM32MCUSchematic.png" />
 
 ### Connectors
 
 #### Left Connector
-<img width="800px" src="./Images/LeftConnectorSchematic.png" />
+<img width="600px" src="./Images/LeftConnectorSchematic.png" />
 
 #### Right Connector
-<img width="800px" src="./Images/RightConnectorSchematic.png" />
+<img width="600px" src="./Images/RightConnectorSchematic.png" />
 ---
 
 Please check each subdirectory for more detail.
