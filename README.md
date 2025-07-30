@@ -31,6 +31,14 @@ Given that this is just a basic guide to designing, laying out, and maunfacturin
 <p align="center">
   <img width="600px" src="./Images/RightConnectorSchematic.png" />
 </p>
+
+## Assigning Footprints
+
+## PCB Layout
+
+## 3D View
+
+## Physical Board / Functionality
 ---
 
 Please check each subdirectory for more detail.
