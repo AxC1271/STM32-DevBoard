@@ -40,6 +40,7 @@ Given that this is just a basic guide to designing, laying out, and maunfacturin
 <p align="center">
     <em>External connector for USART2 and GPIO pins.</em>
 </p>
+
 ## Assigning Footprints
 
 ## PCB Layout
