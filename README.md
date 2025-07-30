@@ -7,18 +7,26 @@ This repository is my first ever PCB design project. After working on projects t
 Given that this is just a basic guide to designing, laying out, and maunfacturing a simple STM32 board, this PCB will only offer 2 UART channelgs and a single I2C bus for peripherals. 
 
 ### Power Regulator Circuit
-<img width="800px" src="./Images/PowerRegulatorSchematic.png" />
+<p align="center">
+  <img width="800px" src="./Images/PowerRegulatorSchematic.png" />
+</p>
 
 ### STM32F030 MCU
-<img width="600px" src="./Images/STM32MCUSchematic.png" />
+<p align="center">
+  <img width="600px" src="./Images/STM32MCUSchematic.png" />
+</p>
 
-### Connectors
+## Connectors
 
-#### Left Connector
-<img width="600px" src="./Images/LeftConnectorSchematic.png" />
+### Left Connector
+<p align="center">
+  <img width="600px" src="./Images/LeftConnectorSchematic.png" />
+</p>
 
-#### Right Connector
-<img width="600px" src="./Images/RightConnectorSchematic.png" />
+### Right Connector
+<p align="center">
+  <img width="600px" src="./Images/RightConnectorSchematic.png" />
+</p>
 ---
 
 Please check each subdirectory for more detail.
