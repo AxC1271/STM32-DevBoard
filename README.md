@@ -8,7 +8,7 @@ Given that this is just a basic guide to designing, laying out, and maunfacturin
 
 ### Power Regulator Circuit
 <p align="center">
-    <img width="800px" src="./Images/PowerRegulatorSchematic.png" />
+    <img width="800px" src="./Images/BuckRegulatorSchematic.png" />
 </p>
 <p align="center">
     <em>Buck Converter Based Power Regulator Circuit.</em>
