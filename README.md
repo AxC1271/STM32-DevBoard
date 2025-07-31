@@ -18,7 +18,7 @@ For the specific buck converter that we are using, I'm using the TPS54300DDA chi
 
 ### STM32F030 MCU
 <p align="center">
-    <img width="800px" src="./Images/MCUSchematic.png" />
+    <img width="800px" src="./Images/STMSchematic.png" />
 </p>
 <p align="center">
     <em>MCU Schematic with GPIO, UART, and I2C pins.</em>
