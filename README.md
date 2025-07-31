@@ -8,7 +8,7 @@ Given that this is just a basic guide to designing, laying out, and manufacturin
 
 ### Power Regulator Circuit
 <p align="center">
-    <img width="800px" src="./Images/BuckRegulatorSchematic.png" />
+    <img width="800px" src="./Images/PowerRegulatorSchematic.png" />
 </p>
 <p align="center">
     <em>Buck Converter Based Power Regulator Circuit.</em>
@@ -18,6 +18,7 @@ For the specific buck converter that we are using, I'm using the TPS54300DDA chi
 
 ### STM32F030 MCU
 <p align="center">
+    <img width="800px" src="./Images/MCUSchematic.png" />
 </p>
 <p align="center">
     <em>MCU Schematic with GPIO, UART, and I2C pins.</em>
@@ -27,7 +28,7 @@ For the specific buck converter that we are using, I'm using the TPS54300DDA chi
 
 ### Left Connector
 <p align="center">
-  <img width="600px" src="./Images/LeftConnectorSchematic.png" />
+  <img width="600px" src="./Images/LeftConnector.png" />
 </p>
 <p align="center">
     <em>External connector for I2C bus, NRST, and USART1 pins.</em>
@@ -35,7 +36,7 @@ For the specific buck converter that we are using, I'm using the TPS54300DDA chi
 
 ### Right Connector
 <p align="center">
-  <img width="600px" src="./Images/RightConnectorSchematic.png" />
+  <img width="600px" src="./Images/RightConnector.png" />
 </p>
 <p align="center">
     <em>External connector for USART2 and GPIO pins.</em>
