@@ -19,7 +19,7 @@ the passive components are based off the TPS54300DDA datasheet.
 
 ### STM32F030 MCU
 <p align="center">
-    <img width="800px" src="./Images/STMSchematic.png" />
+    <img width="800px" src="./Images/STM32Schematic.png" />
 </p>
 <p align="center">
     <em>MCU Schematic with GPIO, UART, and I2C pins.</em>
