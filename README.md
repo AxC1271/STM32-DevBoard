@@ -17,6 +17,10 @@ Given that this is just a basic guide to designing, laying out, and manufacturin
 For the specific buck converter that we are using, I'm using the TPS54300DDA chip. All of the values of 
 the passive components are based off the TPS54300DDA datasheet.
 
+<p align="center">
+    <img width="800px" src="./Images/TPS5430DDA_Datasheet.png" />
+</p>
+
 ### STM32F030 MCU
 <p align="center">
     <img width="800px" src="./Images/STM32Schematic.png" />
