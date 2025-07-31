@@ -55,5 +55,3 @@ the passive components are based off the TPS54300DDA datasheet.
 
 ## Physical Board / Functionality
 ---
-
-Please check each subdirectory for more detail.
