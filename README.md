@@ -4,7 +4,7 @@
 This repository is my first ever PCB design project. After working on projects that involved more digital circuits and RTL scripting, I've always wanted to build my own boards, more specifically FPGA boards. However, I want to start on something simpler so I can understand the inner workings of PCB design, decision choices, and general concepts that are crucial to a functional STM32 board.
 
 ## Design Approach
-Given that this is just a basic guide to designing, laying out, and manufacturing a simple STM32 board, this PCB will only offer 2 UART channels and a single I2C bus for peripherals. 
+Given that this is just a basic guide to designing, laying out, and manufacturing a simple STM32 board, this PCB will only offer a single USB interface.
 
 ### Power Regulator Circuit
 <p align="center">
@@ -14,37 +14,19 @@ Given that this is just a basic guide to designing, laying out, and manufacturin
     <em>Buck Converter Based Power Regulator Circuit.</em>
 </p>
 
-For the specific buck converter that we are using, I'm using the TPS54300DDA chip. All of the values of 
-the passive components are based off the TPS54300DDA datasheet.
-
-<p align="center">
-    <img width="800px" src="./Images/TPS5430DDA_Datasheet.png" />
-</p>
 
 ### STM32F030 MCU
 <p align="center">
     <img width="800px" src="./Images/STM32Schematic.png" />
 </p>
 <p align="center">
-    <em>MCU Schematic with GPIO, UART, and I2C pins.</em>
+    <em>MCU Schematic with USB-B Micro Interface.</em>
 </p>
 
 ## Connectors
 
-### Left Connector
 <p align="center">
-  <img width="600px" src="./Images/LeftConnector.png" />
-</p>
-<p align="center">
-    <em>External connector for I2C bus, NRST, and USART1 pins.</em>
-</p>
-
-### Right Connector
-<p align="center">
-  <img width="600px" src="./Images/RightConnector.png" />
-</p>
-<p align="center">
-    <em>External connector for USART2 and GPIO pins.</em>
+  <img width="600px" src="./Images/Connector.png" />
 </p>
 
 ## Assigning Footprints
