@@ -8,16 +8,16 @@ Given that this is just a basic guide to designing, laying out, and manufacturin
 
 ### Power Regulator Circuit
 <p align="center">
-    <img width="800px" src="./Images/PowerRegulatorSchematic.png" />
+    <img width="800px" src="./Images/LDOSchematic.png" />
 </p>
 <p align="center">
-    <em>Buck Converter Based Power Regulator Circuit.</em>
+    <em> LDO-Based Power Regulator Circuit.</em>
 </p>
 
 
 ### STM32F030 MCU
 <p align="center">
-    <img width="800px" src="./Images/STM32Schematic.png" />
+    <img width="800px" src="./Images/STM32MCUSchematic.png" />
 </p>
 <p align="center">
     <em>MCU Schematic with USB-B Micro Interface.</em>
