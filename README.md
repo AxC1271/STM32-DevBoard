@@ -16,13 +16,18 @@ Given that this is just a basic guide to designing, laying out, and manufacturin
 
 Here we have the external USB-B micro port that interfaces with our STM32 microcontroller. In order to use the voltage coming from this port, I stepped down any input voltage down to 3.3V using the **XC6206P332MR**, which requires two `0.1uF` capacitors according to its datasheet, one at the input and one at the output. The one at the input in conjunction with the `100Ω` ferrite bead acts as a low-pass filter, filtering out high frequency signals due to the capacitor's lower impedance. At the output, the 3.3V signal is then passed through an LED with a current limiting resistor as a visual indicator that the 3.3V source is present at the output.
 
-### STM32F030 MCU
+<br />
+Quick note about the shield option being ignored, generally the shield pin is to connect the board to an external chassis but because this is a standalone board, that's why it's ignored.
+
+### STM32F103C8Tx MCU
 <p align="center">
     <img width="800px" src="./Images/STM32MCUSchematic.png" />
 </p>
 <p align="center">
     <em>MCU Schematic with USB-B Micro Interface.</em>
 </p>
+
+With this specific microcontroller, 
 
 ## Connectors
 
