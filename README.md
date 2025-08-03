@@ -19,7 +19,7 @@ Here we have the external USB-B micro port that interfaces with our STM32 microc
 <br />
 Quick note about the shield option being ignored, generally the shield pin is to connect the board to an external chassis but because this is a standalone board, that's why it's ignored.
 
-### STM32F103C8Tx MCU
+### STM32F103C8T6 MCU
 <p align="center">
     <img width="800px" src="./Images/STM32Schematic.png" />
 </p>
