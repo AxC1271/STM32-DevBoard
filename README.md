@@ -21,7 +21,7 @@ Quick note about the shield option being ignored, generally the shield pin is to
 
 ### STM32F103C8Tx MCU
 <p align="center">
-    <img width="800px" src="./Images/STM32MCUSchematic.png" />
+    <img width="800px" src="./Images/STM32Schematic.png" />
 </p>
 <p align="center">
     <em>MCU Schematic with USB-B Micro Interface.</em>
