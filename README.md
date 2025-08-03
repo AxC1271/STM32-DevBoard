@@ -34,12 +34,19 @@ First and foremost, there needs to be capacitors between the 3.3V source and gro
 <p align="center">
     <img width="800px" src="./Images/PCBLayout.png" />
 </p>
+<p align="center">
+    <em> Signal traces on the STM32 board, with power traces being 0.5mm while ordinary traces are kept at 0.3mm.</em>
+</p>
+
+In general, vias are used to link ground pins to the ground plane. Most signals are routed on the top copper layer, with a couple of vias used to prevent signal crossing especially with the 3.3V bus. After the layout, a DRC check was used to ensure that there are no violations in signal traces.
 
 ## 3D View
 
 <p align="center">
     <img width="800px" src="./Images/3DViewer.png" />
 </p>
+
+Here's the final 3D view of the STM32 microcontroller board.
 
 ## Physical Board / Functionality
 ---
