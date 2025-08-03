@@ -29,6 +29,8 @@ Given that this is just a basic guide to designing, laying out, and manufacturin
   <img width="600px" src="./Images/Connector.png" />
 </p>
 
+Here we have the external USB-B micro port that interfaces with our STM32 microcontroller. In order to use the voltage coming from this port, I stepped down any input voltage down to 3.3V using the **XC6206P332MR**, which requires two `0.1uF` capacitors, one at the input and one at the output. The one at the input in conjunction with the `100Ω` ferrite bead acts as a low-pass filter, filtering out high frequency signals due to the capacitor's lower impedance. 
+
 ## Assigning Footprints
 
 ## PCB Layout
