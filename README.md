@@ -29,11 +29,17 @@ Quick note about the shield option being ignored, generally the shield pin is to
 
 First and foremost, there needs to be capacitors between the 3.3V source and ground. Since this specific STM32 microcontroller has 4 **VDD** pins, there must generally be a `100 nF` capacitor in parallel for each of these pins. These capacitors act as `decoupling capacitors`, ensuring a steady voltage supply to each VDD pin. In addition, a bulk capacitor with a value of `4.7 uF` is also placed in parallel to the decoupling capacitors to handle lower-frequency current swings, while the decoupling capacitors handle the higher frequency noise and transients.
 
-## Assigning Footprints
-
 ## PCB Layout
 
+<p align="center">
+    <img width="800px" src="./Images/PCBLayout.png" />
+</p>
+
 ## 3D View
+
+<p align="center">
+    <img width="800px" src="./Images/3DViewer.png" />
+</p>
 
 ## Physical Board / Functionality
 ---
