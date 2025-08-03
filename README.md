@@ -8,7 +8,7 @@ Given that this is just a basic guide to designing, laying out, and manufacturin
 
 ### Power Regulator Circuit
 <p align="center">
-    <img width="800px" src="./Images/LDOSchematic.png" />
+    <img width="800px" src="./Images/LDORegulatorSchematic.png" />
 </p>
 <p align="center">
     <em> LDO-Based Power Regulator Circuit.</em>
