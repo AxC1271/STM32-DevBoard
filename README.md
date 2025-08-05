@@ -52,7 +52,10 @@ Here's the final 3D view of the STM32 microcontroller board. The final step is a
     <img width="800px" src="./Images/3DViewerBack.png" />
 </p>
 
-Here's just the back of the board with some silkscreening.
+<p align="center">
+    <em> Back silkscreening with name and date.</em>
+</p>
+
 
 ## Physical Board / Functionality
 ---
