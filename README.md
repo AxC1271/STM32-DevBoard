@@ -38,7 +38,7 @@ First and foremost, there needs to be capacitors between the 3.3V source and gro
     <em> Signal traces on the STM32 board, with power traces being 0.5mm while ordinary traces are kept at 0.3mm. Vias are used for ground traces. </em>
 </p>
 
-In general, vias are used to link ground pins to the ground plane. Most signals are routed on the top copper layer, with a couple of vias used to prevent signal crossing especially with the 3.3V bus. After the layout, a `design rule check` revealed that there are some constraint violations that must be resolved before the assembly file is sent to a manufacturer.
+In general, vias are used to link ground pins to the ground plane. Most signals are routed on the top copper layer, with a couple of vias used to prevent signal crossing especially with the 3.3V bus. A copper pour was used near the voltage regulator to create a ground and power planes whilst also reducing EMI and improving signal integrity.
 
 ## 3D View
 
