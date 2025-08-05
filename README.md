@@ -32,7 +32,7 @@ First and foremost, there needs to be capacitors between the 3.3V source and gro
 ## PCB Layout
 
 <p align="center">
-    <img width="800px" src="./Images/PCBLayout.png" />
+    <img width="800px" src="./Images/PCBFullLayout.png" />
 </p>
 <p align="center">
     <em> Signal traces on the STM32 board, with power traces being 0.5mm while ordinary traces are kept at 0.3mm.</em>
@@ -43,10 +43,16 @@ In general, vias are used to link ground pins to the ground plane. Most signals 
 ## 3D View
 
 <p align="center">
-    <img width="800px" src="./Images/3DViewer.png" />
+    <img width="800px" src="./Images/3DViewerFront.png" />
 </p>
 
 Here's the final 3D view of the STM32 microcontroller board. The final step is adding a silkscreen to the board for final touches, and then sending the necessary files for the full PCB assembly.
+
+<p align="center">
+    <img width="800px" src="./Images/3DViewerBack.png" />
+</p>
+
+Here's just the back of the board with some silkscreening.
 
 ## Physical Board / Functionality
 ---
