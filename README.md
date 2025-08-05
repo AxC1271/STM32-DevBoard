@@ -43,19 +43,10 @@ In general, vias are used to link ground pins to the ground plane. Most signals 
 ## 3D View
 
 <p align="center">
-    <img width="800px" src="./Images/3DViewerFront.png" />
+    <img width="800px" src="./Images/3DModel.png" />
 </p>
 <p align="center">
     <em> Front copper layer with all signal traces and silkscreens. </em>
-</p>
-
-
-<p align="center">
-    <img width="800px" src="./Images/3DViewerBack.png" />
-</p>
-
-<p align="center">
-    <em> Back silkscreening with my name, board name, and date.</em>
 </p>
 
 
