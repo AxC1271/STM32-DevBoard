@@ -35,7 +35,7 @@ First and foremost, there needs to be capacitors between the 3.3V source and gro
     <img width="800px" src="./Images/PCBFullLayout.png" />
 </p>
 <p align="center">
-    <em> Signal traces on the STM32 board, with power traces being 0.5mm while ordinary traces are kept at 0.3mm.</em>
+    <em> Signal traces on the STM32 board, with power traces being 0.5mm while ordinary traces are kept at 0.3mm. Vias are used for ground traces. </em>
 </p>
 
 In general, vias are used to link ground pins to the ground plane. Most signals are routed on the top copper layer, with a couple of vias used to prevent signal crossing especially with the 3.3V bus. After the layout, a `design rule check` revealed that there are some constraint violations that must be resolved before the assembly file is sent to a manufacturer.
@@ -45,15 +45,17 @@ In general, vias are used to link ground pins to the ground plane. Most signals 
 <p align="center">
     <img width="800px" src="./Images/3DViewerFront.png" />
 </p>
+<p align="center">
+    <em> Front copper layer with all signal traces and silkscreens. </em>
+</p>
 
-Here's the final 3D view of the STM32 microcontroller board. The final step is adding a silkscreen to the board for final touches, and then sending the necessary files for the full PCB assembly.
 
 <p align="center">
     <img width="800px" src="./Images/3DViewerBack.png" />
 </p>
 
 <p align="center">
-    <em> Back silkscreening with name and date.</em>
+    <em> Back silkscreening with my name, board name, and date.</em>
 </p>
 
 
