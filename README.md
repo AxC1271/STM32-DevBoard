@@ -46,7 +46,7 @@ In general, vias are used to link ground pins to the ground plane. Most signals 
     <img width="800px" src="./Images/3DViewer.png" />
 </p>
 
-Here's the final 3D view of the STM32 microcontroller board. The final step is adding a silkscreen to the board 
+Here's the final 3D view of the STM32 microcontroller board. The final step is adding a silkscreen to the board for final touches, and then sending the necessary files for the full PCB assembly.
 
 ## Physical Board / Functionality
 ---
