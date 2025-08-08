@@ -57,6 +57,6 @@ After passing a design rule check on KiCAD, it's time to send the files to a PCB
 I'm using `JLCPCB`'s services to get my board manufactured. As of 8/5/25, the BOM, position files, and the Gerber files have been sent and the boards
 are undergoing fabrication. 
 
-Update: As of August 7th, 2025, I cannot find the specific USB Micro-B port supplied by Wuerth Eletronik 
+Update: As of August 8th, 2025, I cannot find the specific USB Micro-B port supplied by Wuerth Eletronik 
 
 ---
