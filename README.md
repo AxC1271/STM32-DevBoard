@@ -54,7 +54,7 @@ In general, vias are used to link ground pins to the ground plane. Most signals 
 ## Physical Board / Functionality
 
 After passing a design rule check on KiCAD, it's time to send the files to a PCB manufacturer to get my board assembled. For this specific board, 
-I'm using `JLCPCB`'s services to get my board manufactured. As of 8/5/25, the BOM, position files, and the Gerber files have been sent and the boards
-are undergoing fabrication. 
+I'm using `JLCPCB`'s services to get my board manufactured. As of 8/9/25, the BOM, position files, and the Gerber files have been sent and the boards
+are undergoing fabrication.
 
 ---
