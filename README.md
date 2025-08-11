@@ -38,7 +38,11 @@ First and foremost, there needs to be capacitors between the 3.3V source and gro
     <em> Signal traces on the STM32 board, with power traces being 0.5mm while ordinary traces are kept at 0.3mm. Vias are used for ground traces. </em>
 </p>
 
-In general, vias are used to link ground pins to the ground plane. Most signals are routed on the top copper layer, with a couple of vias used to prevent signal crossing especially with the 3.3V bus. A copper pour was used near the voltage regulator to create ground and power planes whilst also reducing EMI and improving signal integrity.
+In general, vias are used to link ground pins to the ground plane. Most signals are routed on the top copper layer, with a couple of vias used to prevent signal crossing especially with the 3.3V bus. 
+A copper pour was used near the voltage regulator to create ground and power planes whilst also reducing EMI and improving signal integrity.
+
+Quick note: to further increase the stability of a 2-layer board like this, it is recommended to add as much stitching vias as possible, on top of adding a ground pour on the top layer. This is to decrease
+the distance that sensitive signals have to travel to get to ground, reducing the inductance and therefore maximizing signal integrity.
 
 ## 3D View
 
@@ -53,8 +57,6 @@ In general, vias are used to link ground pins to the ground plane. Most signals 
 
 ## Physical Board / Functionality
 
-After passing a design rule check on KiCAD, it's time to send the files to a PCB manufacturer to get my board assembled. For this specific board, 
-I'm using `JLCPCB`'s services to get my board manufactured. As of 8/9/25, the BOM, position files, and the Gerber files have been sent and the boards
-are undergoing fabrication.
+After passing a design rule check on KiCAD, it's time to send the files to a PCB manufacturer to get my board assembled. For this specific board, I'm using `JLCPCB`'s services to get my board manufactured. 
 
 ---
