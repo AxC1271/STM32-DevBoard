@@ -60,7 +60,7 @@ the distance that sensitive signals have to travel to get to ground, reducing th
 After passing a design rule check on KiCAD, it's time to send the files to a PCB manufacturer to get my board assembled. For this specific board, I'm using `JLCPCB`'s services to get my board manufactured. 
 
 <p align="center">
-    <img width="800px" src="./Images/PhysicalBoard.png" />
+    <img width="800px" height="400px" src="./Images/PhysicalBoard.png" />
 </p>
 <p align="center">
     <em>Manufactured Board from JLCPCB.</em>
