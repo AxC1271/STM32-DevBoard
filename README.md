@@ -66,4 +66,6 @@ After passing a design rule check on KiCAD, it's time to send the files to a PCB
     <em>Manufactured Board from JLCPCB.</em>
 </p>
 
+Unfortunately, I was unable to find the USB micro-B ports for these boards, but I still want to be able to program it using an ST-Linker that I found off of Amazon for roughly `$9`. 
+
 ---
