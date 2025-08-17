@@ -68,6 +68,8 @@ After passing a design rule check on KiCAD, it's time to send the files to a PCB
 
 Unfortunately, I was unable to find the USB micro-B ports for these boards, but I still want to be able to program it using an ST-Linker that I found off of Amazon for roughly `$9`. 
 
+## Code
+
 To test the UART interface of this STM32 board, I'll write a simple UART transceiver on my Basys3 FPGA board to interface with it.
 
 UART Receiver:
