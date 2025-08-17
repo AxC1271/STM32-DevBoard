@@ -178,6 +178,17 @@ begin
     end process;
 
 end Behavioral;
+```
+
+UART Transmitter:
+
+```VHDL
+
+```
+
+Now we can write the C code for the STM32 to pass in some serial data to the Basys3 board and vice versa. We will interface using PlatformIO.
+
+```C
 
 ```
 
