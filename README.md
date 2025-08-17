@@ -217,4 +217,11 @@ void MX_USART2_UART_Init(void) {
 }
 ```
 
+## Video Demo
+
+Here's the video link showing the Basys3 taking the 
+daya bytes through a PMOD port from the STM32 MCU board
+to show that communication is indeed possible from my 
+fabricated board.
+
 ---
