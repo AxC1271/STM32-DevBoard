@@ -180,12 +180,6 @@ begin
 end Behavioral;
 ```
 
-UART Transmitter:
-
-```VHDL
-
-```
-
 Now we can write the C code for the STM32 to pass in some serial data to the Basys3 board and vice versa. We will interface using PlatformIO and write some firmware for the STM32 to transmit some characters to the FPGA.
 
 ```C
