@@ -191,7 +191,8 @@ int main(void) {
     int i = 0;  // index for message
 
     while (1) {
-        HAL_UART_Transmit(&huart2, (uint8_t*)&msg[i], 1, HAL_MAX_DELAY); 
+        HAL_UART_Transmit(&huart2, (uint8_t*)&msg[i], 
+           1, HAL_MAX_DELAY); 
         i++;
 
         if (msg[i] == '\0') { 
