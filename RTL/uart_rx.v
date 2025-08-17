@@ -1,6 +1,7 @@
 module uart_rx #(
     parameter CLK_TICKS = 54
-)(
+)
+    (
     input  wire clk,
     input  wire rst,
     input  wire rx,
