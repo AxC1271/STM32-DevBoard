@@ -190,7 +190,7 @@ int main(void) {
     MX_GPIO_Init();
     MX_USART2_UART_Init();
 
-    char msg[] = "Hello, World!\r\n";
+    char msg[] = "Hello, FPGA!\r\n";
 
     while (1) {
         HAL_UART_Transmit(&huart2, (uint8_t*)msg, sizeof(msg) - 1, HAL_MAX_DELAY);
