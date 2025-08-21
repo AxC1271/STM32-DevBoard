@@ -253,14 +253,13 @@ void Error_Handler(void) {
 ```
 
 ## 🎥 Video Demo
+
 The first video demo shows the FPGA receiver interacting with my Macbook via the `USB-to-Serial bridge`. The purpose of this
 is to see the board behaving correctly from a known source using the terminal. Once the receiver's behavior has been validated,
 then we can integrate the STM32 board and test its functionality.
 
 
-Here's the video link showing the Basys3 taking the 
-daya bytes through a PMOD port from the STM32 MCU board
-to show that communication is indeed possible from my 
-fabricated board.
+Here's the video link showing the Basys3 taking the data bytes through a PMOD port from the STM32 MCU board to show that communication is 
+indeed possible from my fabricated board. This required changing the RX pin on the FPGA to receive the byte.
 
 ---
