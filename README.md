@@ -228,7 +228,7 @@ is to see the board behaving correctly from a known source using the terminal. O
 then we can integrate the STM32 board and test its functionality.
 
 
-Here's the video link showing the Basys3 taking the data bytes through a PMOD port from the STM32 MCU board to show that communication is 
+Here's the **[video link](https://youtube.com/shorts/DqSGexJcCeM)** showing the Basys3 taking the data bytes through a PMOD port from the STM32 MCU board to show that communication is 
 indeed possible from my fabricated board. This required changing the RX pin on the FPGA to receive the byte.
 
 ---
