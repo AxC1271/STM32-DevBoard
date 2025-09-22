@@ -6,9 +6,9 @@ HardwareSerial Serial1(PB7, PB6); // RX, TX pins
 
 unsigned long lastByteTime = 0;
 const unsigned long byteInterval = 1000; // send each byte every 1 second
-const char message[] = "Hello"; // message to send
+const char message[] = "Hello "; // message to send
 int currentByteIndex = 0;
-const int messageLength = 5; 
+const int messageLength = 6; 
 
 void setup() {
   Serial1.begin(115200); // uart receiver on vhdl has baud rate of 115200
