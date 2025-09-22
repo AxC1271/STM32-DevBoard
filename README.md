@@ -223,7 +223,7 @@ void loop() {
 
 ## 🎥 Video Demo
 
-The first video demo shows the FPGA receiver interacting with my Macbook via the `USB-to-Serial bridge`. The purpose of this
+The first **[video demo](https://youtube.com/shorts/mgw7LnCIHqA)**  shows the FPGA receiver interacting with my Macbook via the `USB-to-Serial bridge`. The purpose of this
 is to see the board behaving correctly from a known source using the terminal. Once the receiver's behavior has been validated,
 then we can integrate the STM32 board and test its functionality.
 
