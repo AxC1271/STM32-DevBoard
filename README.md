@@ -170,85 +170,54 @@ module uart_rx #(
 endmodule
 ```
 
-Now we can write the C code for the STM32 to pass in some serial data to the Basys3 board and vice versa. We will interface using PlatformIO and write some firmware for the STM32 to transmit some characters to the FPGA. This is just one test code example:
+Now we can write the C++ code for the STM32 to pass in some serial data to the Basys3 board and vice versa. We will interface using PlatformIO and write some firmware for the STM32 to transmit some characters to the FPGA. This is just one test code example:
 
-```C
-#include "stm32f1xx_hal.h"
+```C++
+#include <Arduino.h>
+#include <HardwareSerial.h>
 
-UART_HandleTypeDef huart2;
+// TX pin: PB6, RX pin: PB7 (for UART1)
+HardwareSerial Serial1(PB7, PB6); // RX, TX pins
 
-void SystemClock_Config(void);
-void MX_GPIO_Init(void);
-void MX_USART2_UART_Init(void);
-void Error_Handler(void);
+unsigned long lastByteTime = 0;
+const unsigned long byteInterval = 1000; // send each byte every 1 second
+const char message[] = "Hello"; // message to send
+int currentByteIndex = 0;
+const int messageLength = 5; 
 
-int main(void) {
-    HAL_Init();
+void setup() {
+  Serial1.begin(115200); // uart receiver on vhdl has baud rate of 115200
+  
+  Serial.begin(115200);
+  Serial.println("STM32 UART Transmitter Started");
+  Serial.println("Transmitting 'Hello' - one byte per second");
 
-    SystemClock_Config();
-
-    MX_GPIO_Init();
-    MX_USART2_UART_Init();
-
-    char msg[] = "Hello, FPGA!\r\n";
-
-    while (1) {
-        HAL_UART_Transmit(&huart2, (uint8_t*)msg, sizeof(msg) - 1, HAL_MAX_DELAY);
-        HAL_Delay(1000);  
-    }
 }
 
-void SystemClock_Config(void) {
-    RCC_OscInitTypeDef RCC_OscInitStruct = {0};
-    RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+void loop() {
+  if (millis() - lastByteTime >= byteInterval) {
+    
+    char currentByte = message[currentByteIndex];
+    Serial1.write(currentByte);
+    
+    Serial.print("Transmitted byte: '");
+    Serial.print(currentByte);
+    Serial.print("' (ASCII: ");
+    Serial.print((int)currentByte);
+    Serial.println(")");
 
-    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-    RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-    RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
-    RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-    RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-    RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-    RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;  
-    if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
-        Error_Handler();
+    digitalWrite(PC13, !digitalRead(PC13));
+    
+    currentByteIndex++;
+    if (currentByteIndex >= messageLength) {
+      currentByteIndex = 0; 
+      Serial.println("--- Message complete, restarting ---");
     }
-
-    RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
-                                | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
-    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2; 
-    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
-
-    if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK) {
-        Error_Handler();
-    }
-}
-
-void MX_USART2_UART_Init(void) {
-    huart2.Instance = USART2;
-    huart2.Init.BaudRate = 115200;
-    huart2.Init.WordLength = UART_WORDLENGTH_8B;
-    huart2.Init.StopBits = UART_STOPBITS_1;
-    huart2.Init.Parity = UART_PARITY_NONE;
-    huart2.Init.Mode = UART_MODE_TX_RX;
-    huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-    huart2.Init.OverSampling = UART_OVERSAMPLING_16;
-    if (HAL_UART_Init(&huart2) != HAL_OK) {
-        Error_Handler();
-    }
-}
-
-void MX_GPIO_Init(void) {
-    __HAL_RCC_GPIOA_CLK_ENABLE();
-    __HAL_RCC_AFIO_CLK_ENABLE();
-    __HAL_RCC_PWR_CLK_ENABLE();
-}
-
-void Error_Handler(void) {
-    while (1) {
-
-    }
+    
+    lastByteTime = millis();
+  }
+  
+  delay(10);
 }
 ```
 
