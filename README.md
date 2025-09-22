@@ -186,7 +186,7 @@ int currentByteIndex = 0;
 const int messageLength = 6; 
 
 void setup() {
-  Serial1.begin(115200); // uart receiver on vhdl has baud rate of 115200
+  Serial1.begin(115200); // uart receiver has baud rate of 115200
   
   Serial.begin(115200);
   Serial.println("STM32 UART Transmitter Started");
