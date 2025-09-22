@@ -232,3 +232,5 @@ Here's the **[video link](https://youtube.com/shorts/DqSGexJcCeM)** showing the 
 indeed possible from my fabricated board. This required changing the RX pin on the FPGA to receive the byte.
 
 ---
+
+Thanks for stopping and reading until the very end and I hope you learned something new from this README file!
