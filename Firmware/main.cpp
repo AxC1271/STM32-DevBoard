@@ -8,7 +8,7 @@ unsigned long lastByteTime = 0;
 const unsigned long byteInterval = 1000; // send each byte every 1 second
 const char message[] = "Hello "; // message to send
 int currentByteIndex = 0;
-const int messageLength = 6; 
+const int messageLength = 6; // added additional space between Hello's
 
 void setup() {
   Serial1.begin(115200); // uart receiver has baud rate of 115200
